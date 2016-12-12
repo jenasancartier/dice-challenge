@@ -6,13 +6,71 @@ body {
   background: #2A2A2A;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
-  /*display: flex;*/
+span {
+  background: #2A2A2A;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.first-face,  .fourth-face, .fifth-face, .sixth-face {
+  display: flex;
   background: #E7E7E7;
   height: 150px;
   width: 150px;
   border-radius: 10px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.second-face {
+  display: flex;
+  background: #E7E7E7;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.first-face span:nth-of-type(1) {
+  align-self: center;
+}
+
+.second-face span:nth-of-type(1) {
+  align-self: flex-start;
+  margin: 10px;
+}
+
+.second-face span:nth-of-type(2) {
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.third-face {
+  display: flex;
+  background: #E7E7E7;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.third-face span:nth-of-type(1) {
+  align-self: flex-start;
+  margin: 10px;
+}
+
+.third-face span:nth-of-type(2) {
+  align-self: center;
+  margin: 10px;
+}
+
+.third-face span:nth-of-type(3) {
+  align-self: flex-end;
   margin: 10px;
 }
