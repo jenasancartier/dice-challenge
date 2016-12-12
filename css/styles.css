@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2A2A2A;
+  display: flex;
+  justify-content: center;
+}
+
+.first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
+  /*display: flex;*/
+  background: #E7E7E7;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+}
