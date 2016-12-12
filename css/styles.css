@@ -16,7 +16,8 @@ span {
   border-radius: 100%;
 }
 
-.first-face,  .fourth-face, .fifth-face, .sixth-face {
+/******* first dice *******/
+.first-face {
   display: flex;
   background: #E7E7E7;
   height: 150px;
@@ -26,6 +27,11 @@ span {
   justify-content: center;
 }
 
+.first-face span:nth-of-type(1) {
+  align-self: center;
+}
+
+/******* second dice *******/
 .second-face {
   display: flex;
   background: #E7E7E7;
@@ -34,10 +40,6 @@ span {
   border-radius: 10px;
   margin: 10px;
   justify-content: space-between;
-}
-
-.first-face span:nth-of-type(1) {
-  align-self: center;
 }
 
 .second-face span:nth-of-type(1) {
@@ -50,6 +52,7 @@ span {
   margin: 10px;
 }
 
+/******* third dice *******/
 .third-face {
   display: flex;
   background: #E7E7E7;
@@ -73,4 +76,92 @@ span {
 .third-face span:nth-of-type(3) {
   align-self: flex-end;
   margin: 10px;
+}
+
+/******* fourth dice *******/
+.fourth-face {
+  display: flex;
+  background: #E7E7E7;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.fourth-face .column  {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.fourth-face .column:nth-of-type(1) span:nth-of-type(1) {
+  margin: 10px;
+}
+
+.fourth-face .column:nth-of-type(1) span:nth-of-type(2) {
+  margin: 10px;
+}
+
+.fourth-face .column:nth-of-type(2) span:nth-of-type(1) {
+  margin: 10px;
+  align-self: flex-end;
+}
+
+.fourth-face .column:nth-of-type(2) span:nth-of-type(2) {
+  margin: 10px;
+  align-self: flex-end;
+}
+
+/******* fifth dice *******/
+.fifth-face {
+  display: flex;
+  background: #E7E7E7;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.fifth-face .column {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.fifth-face .column:nth-of-type(1) span:nth-of-type(1) {
+  margin: 10px;
+}
+
+.fifth-face .column:nth-of-type(1) span:nth-of-type(2) {
+  margin: 10px;
+}
+
+.fifth-face .column:nth-of-type(3) span:nth-of-type(1) {
+  margin: 10px;
+}
+
+.fifth-face .column:nth-of-type(3) span:nth-of-type(2) {
+  margin: 10px;
+}
+
+.fifth-face .column:nth-of-type(2){
+  justify-content:center;
+}
+
+.fifth-face .column:nth-of-type(2) span:nth-of-type(1) {
+  margin: 10px;
+}
+
+
+/******* sixth dice *******/
+.sixth-face {
+  display: flex;
+  background: #E7E7E7;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: space-between;
 }
